@@ -13,8 +13,8 @@ RUN gem install bundler
 COPY Gemfile* /usr/src/app/
 # 3.2 Gem 패키지 설치 (실행 디렉토리 설정)
 WORKDIR /usr/src/app
-# 3.3 패키지 설치, --no-rdoc, --no-ri 옵션으로 필요없는 문서 생성하지 않아 이미지 용량 줄임
-RUN bundle install --no-rdoc --no-ri
+# 3.3 패키지 설치
+RUN bundle install
 # 3.3 app 소스 복사
 COPY . /usr/src/app
 
