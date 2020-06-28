@@ -16,7 +16,7 @@ docker run -d -p 8080:4567 app
 
 ## Result
 
-* [capture](capture.png)
+* ![capture](capture.png)
 
 
 ## Reference
